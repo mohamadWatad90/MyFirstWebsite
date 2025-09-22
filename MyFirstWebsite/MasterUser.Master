@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterUser.master.cs" Inherits="MyFirstWebsite.MasterUser" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .newStyle1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: xx-large;
+            font-weight: lighter;
+            font-style: italic;
+            color: #FF0000;
+            background-color: #66FFFF;
+            border: thin solid #FF0000;
+        }
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            height: 20px;
+            text-align: center;
+        }
+        .auto-style3 {
+            height: 20px;
+            width: 64px;
+        }
+        .auto-style4 {
+            width: 64px;
+        }
+        .auto-style5 {
+            height: 20px;
+            text-align: center;
+            width: 296px;
+        }
+        .auto-style6 {
+            width: 296px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style2" colspan="6"></td>
+                </tr>
+                <tr>
+                    <td class="auto-style3"></td>
+                    <td class="auto-style2">
+                        <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/HomePage1.aspx">Home</asp:LinkButton>
+                    </td>
+                    <td class="auto-style2">
+                        <asp:LinkButton ID="LinkButton2" runat="server" PostBackUrl="~/AboutUs.aspx">About Us</asp:LinkButton>
+                    </td>
+                    <td class="auto-style2">
+                        <asp:LinkButton ID="LinkButton3" runat="server" PostBackUrl="~/LogIn.aspx">Sign In</asp:LinkButton>
+                    </td>
+                    <td class="auto-style5">
+                        <asp:LinkButton ID="LinkButton4" runat="server" PostBackUrl="~/SignUp.aspx">Sign Up</asp:LinkButton>
+                    </td>
+                    <td class="auto-style2"></td>
+                </tr>
+                <tr>
+                    <td class="auto-style4">&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td class="auto-style6">&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+
+        </div>
+   
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+              
+            </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
