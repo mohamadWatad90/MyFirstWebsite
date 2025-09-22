@@ -6,5 +6,5 @@
         Sign Up
     </h1>
 
-    <div>Hello</div>
+    <div>Hello World</div>
 </asp:Content>
